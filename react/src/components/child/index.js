@@ -9,21 +9,18 @@ class Child extends Component {
       count: 0,
     };
   }
-
   handlerPlusCounter = () => {
     this.props.plusCounter()
     this.setState({
       count: this.state.count + 1
     });
   };
-
   handlerMinusCounter = () => {
     this.props.minusCounter()
     this.setState({
       count: this.state.count - 1
     });
   };
-
   render() {
     const { plusLabel, minusLabel, childNumber } = this.props
     return (
